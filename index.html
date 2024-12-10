@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="calculadora">        
+        <input type="text" id="display" disabled>  
+        <br>
+        <div id="teclado">
+        <button class="letter" onclick="clearEntry()">CE</button>
+        <button class="number" onclick="clearAll()">C</button>
+        <button class="number" onclick="appendChar('%')">%</button>
+        <button class="operator" onclick="appendChar('/')">/</button>
+        <br>
+        <button class="number" onclick="appendChar('7')">7</button>
+        <button class="number" onclick="appendChar('8')">8</button>
+        <button class="number" onclick="appendChar('9')">9</button>
+        <button class="operator" onclick="appendChar('*')">*</button>
+        <br>
+        <button class="number" onclick="appendChar('4')">4</button>
+        <button class="number" onclick="appendChar('5')">5</button>
+        <button class="number" onclick="appendChar('6')">6</button>
+        <button class="operator" onclick="appendChar('-')">-</button>
+        <br>
+        <button class="number" onclick="appendChar('1')">1</button>
+        <button class="number" onclick="appendChar('2')">2</button>
+        <button class="number" onclick="appendChar('3')">3</button>
+        <button class="operator" onclick="appendChar('+')">+</button>
+        <br>
+        <button class="number" onclick="toggleSign()">+/-</button>
+        <button class="number" onclick="appendChar('0')">0</button>
+        <button class="number" onclick="appendChar('.')">.</button>
+        <button id="equals" onclick="calculate()">=</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
